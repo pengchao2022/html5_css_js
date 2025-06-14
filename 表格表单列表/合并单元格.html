@@ -1,0 +1,61 @@
+<!---
+合并单元格
+作用：将多个单元格合并成一个单元格，以合并同类信息
+跨行合并 和 跨列合并
+合并单元格步骤：
+1. 明确合并的目标
+2. 保留最左上的单元格，添加属性 （取值是数字，表示需要合并的单元格数量）
+   - 跨行合并，保留最上单元格，添加属性 rowspan
+   - 跨列合并, 保留最左单元格，添加属性 colspan
+3. 删除其他单元格
+
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+     <table border="1"> <!-- 1代表1像素 -->
+        <thead>
+            <tr>
+                <th>姓名</th>
+                <th>语文</th>
+                <th>数学</th>
+                <th>总分</th>
+            </tr> <!-- 有几行写几个 tr-->
+        </thead>
+        <tbody>
+            <tr>
+                <td>李嘉诚</td>
+                <td>99</td>
+                <td rowspan="2">108</td> <!--rowspan 垂直合并两个-->
+                <td>207</td>
+            </tr>
+            <tr>
+                <td>林志玲</td>
+                <td>90</td>
+                <!--<td>70</td>--> <!--合并后要删除-->
+                <td>160</td>
+            </tr>
+            <tr>
+                <td>张飞</td>
+                <td>90</td>
+                <td>90</td>
+                <td>180</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td>总结排名</td>
+                <td colspan="3">全市第一</td> <!--colspan 是水平合并-->
+                <!--<td>全市第二</td>-->
+                <!--<td>全市第三</td>--> <!--合并后要删除原始的数据-->
+            </tr>
+        </tfoot>
+    </table>
+    
+</body>
+</html>
