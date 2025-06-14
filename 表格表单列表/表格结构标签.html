@@ -1,0 +1,57 @@
+<!--
+表格结构标签作用： 用表格结构标签把内容划分区域，让表格结构更清晰，语义更清晰 -- 针对浏览器的
+标签名： 
+thead 表格头部 表格头部内容
+tbody 表格主体 主要内容区域
+tfoot 表格底部 汇总信息区域
+
+
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+     <table border="1"> <!-- 1代表1像素 -->
+        <thead>
+            <tr>
+                <th>姓名</th>
+                <th>语文</th>
+                <th>数学</th>
+                <th>总分</th>
+            </tr> <!-- 有几行写几个 tr-->
+        </thead>
+        <tbody>
+            <tr>
+                <td>李嘉诚</td>
+                <td>99</td>
+                <td>108</td>
+                <td>207</td>
+            </tr>
+            <tr>
+                <td>林志玲</td>
+                <td>90</td>
+                <td>70</td>
+                <td>160</td>
+            </tr>
+            <tr>
+                <td>张飞</td>
+                <td>90</td>
+                <td>90</td>
+                <td>180</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td>总结排名</td>
+                <td>全市第一</td>
+                <td>全市第二</td>
+                <td>全市第三</td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>
