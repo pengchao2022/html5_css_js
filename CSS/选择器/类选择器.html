@@ -1,0 +1,51 @@
+<!--
+类选择器
+作用：查找标签，差异化设置标签的显示效果
+步骤：
+1，定义类选择器 ->.类名
+2. 使用类选择器 -> 标签添加 class="类名"
+
+/*定义类 red 是类名*/
+        .red{
+            color: blueviolet;
+}
+
+使用 red 类：
+<p class="red">this is allen from the IT </p>
+定义 green 类：
+.green{
+            color: green;
+            font-size: larger;
+        }
+使用green 类
+<div class="green">天才是百分之九十九的努力，加百分之一的天赋！</div>
+
+
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS 练习</title>
+    <style>
+        
+        p{
+            color:red;
+        }
+        /*定义类 red 是类名*/
+        .red{
+            color: blueviolet;
+        }
+        .green{
+            color: green;
+            font-size: larger;
+        }
+    </style>
+</head>
+<body>
+    <p>this is just a test</p>
+    <p class="red">this is allen from the IT </p>
+    <div class="green">天才是百分之九十九的努力，加百分之一的天赋！</div>
+</body>
+</html>
