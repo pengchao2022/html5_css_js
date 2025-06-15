@@ -1,0 +1,35 @@
+<!--
+层叠性：
+相同的属性会覆盖： 后面的css属性会覆盖前面的css 属性
+不同的属性会叠加： 不同的css 属性都会生效
+
+
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS层叠性</title>
+    <style>
+        div{
+            color: red;
+        }
+        div{
+            color:green;
+        }
+        /* 可以看到div 标签会是绿色，因为相同的属性，后面的会覆盖掉前面的 */
+        p{
+            color:green;
+        }
+        .green{
+            color:red;
+        }
+    </style>
+</head>
+<body>
+    <div>这是一个div标签</div>
+    <p class="green">这是一个p 标签</p> <!---测试结果为红色-->
+    <p>这又是一个p标签</p> <!--这个颜色就应该是绿色-->
+</body>
+</html>
