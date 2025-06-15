@@ -1,0 +1,41 @@
+<!--
+color 文字颜色
+属性名： color
+属性值：
+颜色关键字:
+green red blue ---- 工作中不太用
+rgb 表示法：
+rbg(r,g,b)
+十六进制。。。
+rgba 表示法
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>文字颜色练习</title>
+    <style>
+        h1{
+            color: red;
+        }
+        h2{
+            color:rgb(0, 200, 254) /* 0-255 */
+        }
+        h3{
+            background-color: aquamarine;
+            color:rgba(255, 200, 100, 0.3) /* rgba 书写透明色 透明度取值范围为0-1 */ 
+            
+        }
+        h4{
+            color: #00f; /* 两个数一样会简写为一个 */
+        }
+    </style>
+</head>
+<body>
+    <h1>这是一个大标题</h1>
+    <h2>RGB书写颜色</h2>
+    <h3>RGBA书写颜色</h3>
+    <h4>十六进制书写颜色</h4>
+</body>
+</html>
