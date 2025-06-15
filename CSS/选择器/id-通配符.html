@@ -1,0 +1,50 @@
+<!--
+id 选择器
+作用： 查找标签，差异化设置标签的显示效果
+场景：id 选择器一般配合javascript 使用，很少用来设置 CSS 样式
+步骤：
+1， 定义id 选择器 -> #id名
+2. 使用id 选择器 -> 标签添加id  id=“id名”
+/* 定义id 选择器 */
+<style
+#red{
+    color: red;
+}
+/* 使用id 选择器*/
+<div id="red">这是div标签/>
+规则：
+同意id选择器在一个页面只能使用一次
+/style>
+
+通配符选择器
+作用：查找所有标签，设置相同的样式
+通配符选择器 *， 不需要调用，浏览器自动查找所有标签，设置为相同样式
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>id选择器</title>
+    <style>
+        #green{
+            color: green;
+            font-size: 35px;
+        }
+        *{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <div id="green">div 标签练习</div>
+    <p>this is p mark</p>
+    <h1>this is h1 mark</h1>
+    <ul>
+        <li>伊朗袭击以色列</li>
+        <li>印度飞机坠毁</li>
+    </ul>
+    <strong>这个是增强显示效果</strong>
+
+</body>
+</html>
