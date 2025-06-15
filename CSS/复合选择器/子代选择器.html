@@ -1,0 +1,27 @@
+<!--
+子代选择器： 选中某元素的子代元素 最近的子级
+选择器写法： 父选择器 > 子选择器{}
+
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>子代选择器练习</title>
+    <style>
+        div > span{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <span>儿子 span</span>
+        <p>
+            <span>孙子 span</span>
+        </p>
+    </div>
+</body>
+</html>
