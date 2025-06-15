@@ -1,0 +1,48 @@
+<!--
+伪类超链接
+选择器：
+:link 作用是 访问前
+:visited 访问后
+:hover 鼠标悬停
+:active 点击时（激活）
+如果要给超链接设置以上四个状态，需要遵循LVHA 顺序
+
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>超链接练习</title>
+    <style>
+        
+        /* link 表示访问前 
+        a:link{
+            color: green;
+        }
+        visited 表示访问后 
+        a:visited{
+            color: red;
+        }
+        hover 表示鼠标悬停上去
+        a:hover{
+            color: blueviolet;
+        }
+        鼠标点击时文字的颜色
+        a:active{
+            color: orange;
+        }
+        实际工作中，只使用hover */
+        a{
+            color:red;
+        }
+        a:hover{
+            color:orange;
+        }
+        
+    </style>
+</head>
+<body>
+    <a href="#">a 标签，测试伪装</a>
+</body>
+</html>
